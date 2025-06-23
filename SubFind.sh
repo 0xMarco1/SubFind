@@ -15,10 +15,10 @@ do
 if [[ $(ping -c 1 $x 2> /dev/null) ]]                                                                                                                                                  
 then                                                                                                                                                                                   
 echo "[+] valid >> $x"                                                                                                                                                                 
-echo $x >> sub.txt                                                                                                                                                                     
-rm -rf sub_tmp.txt                                                                                                                                                                     
+echo $x >> sub.txt                                                                                                                                                                                                                                                                                                                                          
 else                                                                                                                                                                                   
-echo "[-] error >> $x"                                                                                                                                                                 
+echo "[-] error >> $x"  
+rm -rf sub_tmp.txt
 fi                                                                                                                                                                                     
 done                                                                                                                                                                                   
                                                                                                                                                                                        
